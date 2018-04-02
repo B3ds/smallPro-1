@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="instatag.com.b3ds.ConsultDoctorActivity"
+    android:background="@color/white">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Search Doctor"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginLeft="25dp"
+        android:textSize="25sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Enter Doctro/Lab/Address"
+
+            android:textColor="#f60d0909"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Doctor"
+            android:id="@+id/searchdoctorID"
+
+            android:textColor="#000"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/style1"
+            android:padding="10dp"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Your Address"
+
+            android:textColor="#f60d0909"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="city name"
+            android:id="@+id/searchaddressId"
+
+            android:textColor="#000"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/style1"
+            android:padding="10dp"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Choose Plan"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginLeft="25dp"
+        android:textSize="25sp"
+        />
+
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+
+
+        <RadioGroup
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:id="@+id/genderID"
+            android:layout_width="match_parent"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/style1"
+            android:layout_height="wrap_content">
+
+
+
+            <RadioButton
+                android:id="@+id/freeplanID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FREE"
+
+                android:textSize="20sp"
+                android:checked="true" />
+
+            <RadioButton
+                android:textSize="20sp"
+                android:id="@+id/purchaseplanID"
+android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAID" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Select Specialty"
+            android:textColor="#f60d0909"
+            android:textSize="15sp"
+            />
+
+        <Spinner
+            android:id="@+id/specialistID"
+
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:entries="@array/doctorspecialist"
+            android:background="@drawable/style1"
+
+            android:layout_marginTop="5dp" />
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:id="@+id/submitDetailsId"
+       android:background="@drawable/buttonstyle"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        />
+
+
+
+    </LinearLayout>
+
+
+
